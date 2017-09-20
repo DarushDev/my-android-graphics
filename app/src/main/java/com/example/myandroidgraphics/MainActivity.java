@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnWave, btnShimmer;
+    Button btnWave, btnShimmer, btnExplode;
     public static final String TAG = "mytag";
 
     @Override
@@ -19,10 +19,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnWave = (Button) findViewById(R.id.btnWave);
         btnShimmer = (Button) findViewById(R.id.btnShimmer);
+        btnExplode = (Button) findViewById(R.id.btnExplode);
 
 
         btnWave.setOnClickListener(this);
         btnShimmer.setOnClickListener(this);
+        btnExplode.setOnClickListener(this);
 
     }
 
@@ -36,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnShimmer:
                 i = new Intent(MainActivity.this, ShimmerActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnExplode:
+                i = new Intent(MainActivity.this, ExplosionActivity.class);
                 startActivity(i);
                 break;
         }

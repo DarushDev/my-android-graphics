@@ -30,4 +30,5 @@ dependencies {
 
     compile 'com.race604.waveloading:library:1.1.1'
     compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    compile 'tyrantgit:explosionfield:1.0.1'
 }
