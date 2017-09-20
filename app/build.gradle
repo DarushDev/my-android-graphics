@@ -5,7 +5,7 @@ android {
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.myandroidgraphics"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -29,5 +29,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile 'com.race604.waveloading:library:1.1.1'
-    compile 'com.facebook.shimmer:shimmer:0.1.0'
+    compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
 }
